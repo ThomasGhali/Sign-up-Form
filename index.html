@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="img-clouds-container">
+        <div class="logo-container">
+            <img src="download (1).svg" alt="logo" class="logo">
+        </div>
+        <img class="img-clouds" src="magical clouds3.jpg" alt="natural clouds">
+    </div>
+    
+    <div class="content-container">
+        <div class="content">
+            <div class="description-section">
+                <div class="description">
+                    Sign up now and experience unmatched excellence 
+                    tailored just for you. Don’t miss out—your 
+                    next-level journey starts today!                
+                </div>
+            </div>
+            <div class="sign-up-section">
+                <div class="sign-up-wrapper">
+                    <div class="sign-up-header">
+                        <p>Your journey starts here—create your account now!</p>
+                    </div>
+                    <form action="" id="user-sign-in">
+                        <div class="form-section1">
+                            <div>
+                                <label for="first name">FIRST NAME*</label>
+                                <input type="text"  name="first name" id="first name" placeholder="" required required aria-required="true">
+                            </div>
+                            <div>
+                                <label for="last name">LAST NAME*</label>
+                                <input type="text" autocomplete="given-name" name="last name" id="last name" placeholder="" required required aria-required="true">
+                            </div>
+                            <div>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="text" inputmode="numeric" name="phone" id="phone" placeholder="" pattern="\d{6,18}" title="enter at least 6 numbers">
+                            </div>
+                        </div>
+                        <div class="form-section2">
+                            <div>
+                                <label for="email">EMAIL*</label>
+                                <input type="email" name="email" id="email" placeholder="" required required aria-required="true">
+                            </div>
+                            <div>
+                                <label for="password">PASSWORD*</label>
+                                <input type="password" name="password" id="password" 
+                                title="must have 1 capital letter, 1 lowercase letter, 
+                                1 to 2 of the following symbols !@#$%, 
+                                and total character should have range of 8 to 12 only" 
+                                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%]{1,2})(?![.\n]).{8,12}$" 
+                                required aria-required="true" placeholder="">
+                            </div>
+                            <div>
+                                <label for="confirm_password">CONFIRM PASSWORD*</label>
+                                <input type="password"name="confirm_password" 
+                                id="confirm_password" maxlength="8" 
+                                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%]{1,2})(?![.\n]).*{8,12}$" 
+                                placeholder="" required aria-required="true"
+                                title="please enter the same password as above to confirm it">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="submition-section">
+                <button class="create-account" form="user-sign-in">Create Account</button>
+                <div class="have-account">
+                    <p>Already have an account? <a href="http://">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

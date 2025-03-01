@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+    overflow-y: hidden;
+}
+
+.img-clouds-container{
+    width:clamp(225px,35vw,40vw);
+    background-position: center;
+    position: relative;
+}
+.logo-container{
+    position: absolute;
+    width:100%;
+    height:clamp(80px,25%,500px);
+    transform: translateY(25vh);
+    background-image:linear-gradient(to left,rgba(212, 120, 169, 0.553),rgba(140, 28, 43, 0.553),rgba(171, 63, 126, 0.553));
+}
+.logo{
+    height:max(100%, 40px);
+    width:100%;
+    margin: 0 auto;
+    filter: invert(1);
+}
+.img-clouds{
+    display:block;
+    width:inherit;
+    height:auto;
+}
+
+.content-container{
+    display:flex;
+    height:100vh;
+    background-image: linear-gradient(to bottom, rgba(155, 16, 168, 0.301), rgba(147, 53, 13, 0.173));
+}
+.content{
+    margin: auto 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+}
+.description-section{
+    height:30%;
+    min-height: 125px;
+}
+.description{
+    width:max(90%,300px);
+    color:rgb(168, 97, 16);
+    font-size: 1.2rem;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+.sign-up-section{
+    height:max(50%,300px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin:0 -8px;
+}
+.sign-up-wrapper{
+    width:min(90%,700px);
+    height:500px
+}
+.form-section1>div, .form-section2>div{
+    margin-bottom: 1rem;
+}
+.form-section1,.form-section2{
+    margin:10px max(10px,6%) 0px max(10px,7%);
+}
+.sign-up-header{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    margin:10px;
+    width: fit-content;
+    color:rgb(120, 42, 165);
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.625), 0 0 1em rgba(81, 28, 179, 0.408);
+}
+form{
+    display:flex;
+    font-size: 100%;
+}
+label{
+    display:block;
+    font-size:60%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(111, 22, 116);
+    font-family: 'Orbitron', sans-serif;
+}
+input{
+    width:max(80%,100px);
+    height:1.5rem;
+    border:1px solid rgba(65, 11, 173, 0.426);
+    background-image:linear-gradient(to bottom, rgba(255, 255, 0, 0.121), rgba(255, 0, 0, 0.153)) ;
+    font-size: 1rem;
+}
+input:invalid:not(:placeholder-shown){
+    border-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 111, 0)) 1;
+    background-image:linear-gradient(to bottom, rgba(255, 0, 0, 0.389), rgba(255, 1, 98, 0.549));
+    caret-color:rgb(255, 0, 93);
+
+}
+input:valid:not(:placeholder-shown){
+    border:2px green solid;
+    background:rgba(86, 219, 4, 0.415);
+    caret-color:rgb(35, 120, 11);
+}
+input:focus{
+    outline: none;
+    caret-color:blue;
+    border: 2px solid blue;
+}
+
+
+.submition-section{
+    height:max(20%,50px);
+    margin:1rem;
+}
+.create-account{
+    background: linear-gradient(#7143a6b4, #ee52e9d1);
+    padding: 1rem 2rem;
+    border:none;
+    border-radius: 0.4rem;
+    color:rgb(255, 255, 255);
+    font-size:1rem;
+
+}
+.create-account:hover{
+        background: linear-gradient(#df2205d1, #4d0a76b4);
+        transform: scale(1.02);
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+}
+div>.create-account{
+    position: relative;
+}
+.heart {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+.button:hover + .heart {
+    transform: translate(-50%, -50%) scale(1);
+}
+.have-account{
+    margin:1rem 0;
+    a{
+        text-decoration: none;
+        color:rgb(195, 18, 47);
+        border:1px solid rgb(168, 14, 14);
+        border-radius: 0.2rem;
+        padding:0.1rem;
+    }
+}
