@@ -32,11 +32,17 @@
                         <div class="form-section1">
                             <div>
                                 <label for="first name">FIRST NAME*</label>
-                                <input type="text"  name="first name" id="first name" placeholder="" required required aria-required="true">
+                                <input type="text"  name="first name" 
+                                id="first name" placeholder="" pattern='^\w{2,15}$' 
+                                title="from 2 to 15 letters range" 
+                                required required aria-required="true">
                             </div>
                             <div>
                                 <label for="last name">LAST NAME*</label>
-                                <input type="text" autocomplete="given-name" name="last name" id="last name" placeholder="" required required aria-required="true">
+                                <input type="text" autocomplete="given-name" 
+                                name="last name" id="last name" placeholder="" 
+                                pattern='^\w{2,15}$' title="from 2 to 15 letters range" 
+                                required required aria-required="true">
                             </div>
                             <div>
                                 <label for="phone">PHONE NUMBER</label>
